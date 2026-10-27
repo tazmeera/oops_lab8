@@ -1,0 +1,136 @@
+=== StudentBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Student id    : 101
+Student name  : Aarav Sharma
+Student grade : 8.7
+
+=== RectangleBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Length    : 12.5
+Width     : 4.0
+Area      : 50.0
+Perimeter : 33.0
+
+=== EmployeeBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Before serialization : EmployeeBean[empId=7, empName=Neha Verma, salary=55000.5]
+Serialized size      : 106 bytes
+After deserialization: EmployeeBean[empId=7, empName=Neha Verma, salary=55000.5]
+Same object?         : false (a new, equal copy)
+
+=== DateBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Today's date (currentDate) : 2026-10-23
+
+=== UserBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Password set (cannot be read back).
+checkPassword("wrong")      : false
+checkPassword("Secret@123") : true
+
+=== AccountBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Balance changed from 0.0 to 1000.0
+Balance changed from 1000.0 to 1500.0
+
+=== AccountDemo ===
+Picked up JAVA_TOOL_OPTIONS: 
+1) Opening deposit of 5000
+  [EVENT] property 'balance': 0.0 -> 5000.0
+2) Deposit 2500 (balance becomes 7500)
+  [EVENT] property 'balance': 5000.0 -> 7500.0
+3) Withdraw 1200 (balance becomes 6300)
+  [EVENT] property 'balance': 7500.0 -> 6300.0
+4) Set the same value 6300 again -> no change, so no event is fired
+5) Remove the listener, then change the balance -> no event
+Final balance: 100.0
+
+=== BeanIntrospect ===
+Picked up JAVA_TOOL_OPTIONS: 
+=== Properties of StudentBean ===
+class    type=Class    getter=getClass   setter=none
+grade    type=double   getter=getGrade   setter=setGrade
+id       type=int      getter=getId      setter=setId
+name     type=String   getter=getName    setter=setName
+(the 'class' property is inherited from java.lang.Object)
+
+=== Methods of StudentBean (including inherited) ===
+public final native java.lang.Class<?> java.lang.Object.getClass()
+public java.lang.String StudentBean.getName()
+public static void StudentBean.main(java.lang.String[])
+public void StudentBean.setGrade(double)
+public void StudentBean.setId(int)
+public void StudentBean.setName(java.lang.String)
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public final native void java.lang.Object.notifyAll()
+public int StudentBean.getId()
+public final native void java.lang.Object.notify()
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public native int java.lang.Object.hashCode()
+public double StudentBean.getGrade()
+public final void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public java.lang.String java.lang.Object.toString()
+
+=== CarBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Make  : Maruti Suzuki
+Model : Swift
+Year  : 2024
+
+=== CircleBean ===
+Picked up JAVA_TOOL_OPTIONS: 
+Radius        : 7.00
+Area          : 153.9380
+Circumference : 43.9823
+After changing radius to 10 the read-only properties update automatically:
+Area          : 314.1593
+Circumference : 62.8319
+
+=== IpInfo ===
+Picked up JAVA_TOOL_OPTIONS: 
+Host name  : vm
+IP address : 127.0.0.1
+
+=== Q12/13/14 HelloServer + HelloClient ===
+Picked up JAVA_TOOL_OPTIONS: 
+HelloServer listening on port 5000 ...
+Picked up JAVA_TOOL_OPTIONS: 
+Client connected
+Message sent to server: Hello Server
+Received from client: Hello Server
+[1]+  Done                    $J HelloServer
+
+=== Q15 EchoServer + EchoClient ===
+Picked up JAVA_TOOL_OPTIONS: 
+EchoServer listening on port 7000 ...
+Picked up JAVA_TOOL_OPTIONS: 
+Client connected
+Echoing: Hello Echo
+Sent: Hello Echo  |  Echoed back: Hello Echo
+Echoing: Java sockets are easy
+Sent: Java sockets are easy  |  Echoed back: Java sockets are easy
+Echoing: Bye
+Sent: Bye  |  Echoed back: Bye
+Client disconnected
+[1]+  Done                    $J EchoServer
+
+=== Q16/17 UDP ===
+Picked up JAVA_TOOL_OPTIONS: 
+MessageReceiver waiting on UDP port 6000 ...
+Picked up JAVA_TOOL_OPTIONS: 
+Sent: Ping
+Received: Ping  (from 127.0.0.1:41396)
+[1]+  Done                    $J MessageReceiver
+
+=== Q20 MultiClientServer + ClientSimulator ===
+Picked up JAVA_TOOL_OPTIONS: 
+MultiClientServer listening on port 8000 (Ctrl+C to stop) ...
+Picked up JAVA_TOOL_OPTIONS: 
+All clients finished.
+[Client-Thread-5] received: Hello from client 3
+[Client-Thread-3] received: Hello from client 5
+[Client-Thread-4] received: Hello from client 2
+[Client-Thread-1] received: Hello from client 4
+[Client-Thread-2] received: Hello from client 1
+

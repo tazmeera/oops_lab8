@@ -1,0 +1,63 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+=============== Q01_StudentBeanDemo
+Id    : 101
+Name  : Asha Verma
+Grade : 8.7
+=============== Q02_RectangleBeanDemo
+Length    : 12.5
+Width     : 4.0
+Area      : 50.0
+Perimeter : 33.0
+=============== Q03_EmployeeBeanDemo
+Original     : EmployeeBean[empId=7, empName=Rohan Mehta, salary=55000.0]
+Serialized to employee.ser (107 bytes)
+Deserialized : EmployeeBean[empId=7, empName=Rohan Mehta, salary=55000.0]
+=============== Q04_DateBeanDemo
+currentDate = 2026-10-23
+property currentDate -> readable=true, writable=false
+=============== Q05_UserBeanDemo
+Password set. checkPassword("s3cret") = true
+checkPassword("wrong")  = false
+property password -> readable=false, writable=true
+=============== Q06_Q07_AccountBeanDemo
+Deposit -> balance 5000
+  [event] balance changed from 0.0 to 5000.0
+Withdraw -> balance 3200
+  [event] balance changed from 5000.0 to 3200.0
+Set same value 3200 (no event expected)
+Listener removed, set 100 (no event expected)
+Final balance = 100.0
+=============== Q08_IntrospectorDemo
+=== Properties of StudentBean ===
+class    type=Class              getter=getClass   setter=-
+grade    type=double             getter=getGrade   setter=setGrade
+id       type=int                getter=getId      setter=setId
+name     type=String             getter=getName    setter=setName
+
+=== Methods of StudentBean ===
+public java.lang.String StudentBean.getName()
+public void StudentBean.setGrade(double)
+public void StudentBean.setId(int)
+public void StudentBean.setName(java.lang.String)
+public int StudentBean.getId()
+public double StudentBean.getGrade()
+
+(Total methods incl. inherited from Object: 15)
+=============== Q09_CarBeanDemo
+Make  : Maruti Suzuki
+Model : Swift
+Year  : 2024
+Updated year: 2026
+=============== Q10_CircleBeanDemo
+radius=1.0  area=3.1416  circumference=6.2832
+radius=2.5  area=19.6350  circumference=15.7080
+radius=10.0  area=314.1593  circumference=62.8319
+property area -> readable=true, writable=false
+property circumference -> readable=true, writable=false
+property radius -> readable=true, writable=true
+setRadius(-1) rejected: radius cannot be negative
+=============== Q11_IpAddress
+Host name  : vm
+IP address : 127.0.0.1
+Loopback   : localhost / 127.0.0.1
